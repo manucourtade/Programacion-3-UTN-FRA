@@ -1,0 +1,425 @@
+:root {
+    --color-bg-oliva: #8a8634;
+    --color-bg-white: #f0eadc;
+    --color-font-terracota: #4a2e23;
+    --color-font-amarillo: #eac891;
+    --color-bg-marron: #be3c08;
+}
+
+* {
+    font-family: Google Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+header {
+    background-color: var(--color-bg-oliva);
+    text-align: center;
+    color: var(--color-font-amarillo);
+    padding: 40px;
+    font-size: 35px;
+}
+
+.introduccion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg-oliva);
+}
+
+.introduccion .texto-introduccion {
+    width: 50%;
+    background-color: var(--color-bg-white);
+    text-align: start;
+    padding: 30px 35px 0;
+    color: var(--color-font-terracota);
+}
+
+.texto-introduccion h2 {
+    font-size: 55px;
+    width: 60%;
+    margin: 40px ;
+}
+
+
+.primer-p-intr {
+    font-size: 25px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: 45px;
+}
+
+.segundo-p-intr {
+    font-size: 25px;
+    width: 72%;
+    margin-left: 45px;
+}
+
+.introduccion .imagen-introduccion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.introduccion .imagen-introduccion img{
+    margin-bottom: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+
+/* Origen */
+
+.clasico-origen {
+    background-color: var(--color-bg-marron);
+    color: white;
+    padding: 20px;
+    
+}
+
+.clasico-origen ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h2-origen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    font-size: 35px;
+    text-align: start;
+    margin-left: 30px;
+    padding: 10px 30px 0px 10px;
+}
+
+.p-origen {
+    width: 50%;
+    font-size: 30px;
+    font-weight: 200;
+    list-style: none;
+    text-align: start;
+    padding: 30px;
+}
+
+
+.p-origen p {
+    width: 100%;
+    margin-left: 20px;
+}
+
+/* INGREDIENTES & TABLA */
+.ingredientes-tabla {
+    display: flex;
+    color: var(--color-font-terracota);
+    justify-content: space-between;
+    background-color: var(--color-bg-oliva);
+    
+}
+
+.ingredientes-tabla .ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg-white);
+    width: 50%;
+    padding: 50px;
+}
+
+.ingredientes h3 {
+    font-size: 35px;
+    padding: 20px 0 ;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ingredientes ul {
+    font-size: 30px;
+    margin: 0 25px;
+}
+
+.ingredientes li {
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse; /* va acá, no en el td */
+}
+
+.ingredientes-tabla .tabla {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px;
+    font-size: 25px;
+    padding: 15px;
+    background-color: var(--color-bg-white);
+}
+
+.tabla thead th{
+    padding: 30px;
+    margin-top: 20px;
+    border-bottom: 3px solid var(--color-font-terracota);
+}
+
+thead th:first-child {
+    border-right: 3px solid var(--color-font-terracota);
+}
+
+.tabla tbody td {
+    padding: 20px;
+}
+
+.tabla tbody td:first-child {
+    border-right: 3px solid var(--color-font-terracota);
+}
+
+/* LISTO PARA COCINAR! */
+.listo-para-cocinar {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 40px;
+}
+
+/* PASOS */
+.pasos {
+    display: flex;
+    background-color: var(--color-bg-white);
+    width: 100%;
+}
+
+.pasos .texto-pasos {
+    width: 80%;
+    padding: 30px;
+    margin: 40px;
+    color: var(--color-font-terracota);
+}
+
+.texto-pasos h3 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--color-bg-oliva);
+}
+
+.texto-pasos ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 55px;
+}
+
+.texto-pasos ol b {
+    font-size: 35px;
+    color: var(--color-font-terracota);
+    font-weight: 600;
+}
+
+.texto-pasos ol li {
+    font-size: 25px;
+    padding: 15px;
+}
+
+article {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px 0 40px;
+    overflow: hidden;
+    background-color: var(--color-bg-oliva);
+}
+article ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+article img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+/* ESLOGAN FINAL */
+.eslogan-final {
+    display: flex;
+    text-align: center;
+    padding: 40px 15px;
+    font-size: 40px;
+}
+
+.eslogan-final .img-eslogan {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.eslogan-final h2 {
+    display: flex;
+    width: 60%;
+    font-weight: 700;
+    margin-left: 30px;
+    align-items: center;
+}
+.img-eslogan img {
+    width: 50%;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-bg-white);
+    display: flex;
+    justify-content: end;
+    padding: 0px 30px 15px 0;
+}
+
+footer p {
+    background-color: var(--color-bg-oliva);
+    color: var(--color-bg-white);
+    font-size: 35px;
+    padding: 5px 18px 5px 15px;
+    font-weight: 500;
+    width: 18%;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* MEDIA QUERIES */
+@media  screen and (max-width: 1450px) {
+    .introduccion {
+        flex-direction: column;
+    }
+    .introduccion .texto-introduccion {
+        padding: 20px;
+        width: 100%;
+    }
+    .introduccion .imagen-introduccion {
+        padding: 40px;
+        width: 100%;
+    }
+    
+}
+
+@media  screen and (max-width: 1050px) {
+    .clasico-origen ul {
+    
+        flex-direction: column;
+        padding: 30px;
+    }
+    .clasico-origen .h2-origen {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .clasico-origen .p-origen {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        font-size: 22px; /* era 35px */
+        padding: 20px;
+    }
+
+    .texto-introduccion h2 {
+        font-size: 32px; /* era 55px */
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .primer-p-intr,
+    .segundo-p-intr {
+        font-size: 18px; /* eran 25px */
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .clasico-origen .h2-origen {
+        font-size: 24px; /* era 35px */
+    }
+
+    .clasico-origen .p-origen {
+        font-size: 18px; /* era 30px */
+    }
+
+    .ingredientes-tabla {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ingredientes-tabla .ingredientes {
+        width: 100%;
+        padding: 20px;
+    }
+    .ingredientes h3,
+    .ingredientes ul li,
+    .tabla tbody {
+        font-size: 20px;
+    }
+
+    .ingredientes-tabla .tabla {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .pasos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pasos .texto-pasos {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .texto-pasos ol li {
+        font-size:20px;
+    }
+
+    article {
+        width: 100%;
+        margin:0;
+    }
+
+    .eslogan-final {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .eslogan-final .img-eslogan {
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+
+    footer p {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+}
+

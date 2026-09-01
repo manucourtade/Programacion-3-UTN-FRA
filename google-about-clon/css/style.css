@@ -206,13 +206,12 @@ header {
 .h2__estilo {
     font-size: 50px;
     font-weight: 300;
-    margin-bottom: 15px;
 }
 
 .seccion-google-world p {
     color: #5f6368;
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
     letter-spacing: .1px;
 }
 
@@ -235,8 +234,9 @@ header {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-top: 80px;
+    margin: 60px auto;
     padding: 15px;
+    max-width: 1150px;
 }
 
 .ia-imagen {
@@ -275,9 +275,10 @@ header {
 .contenedor-novedades {
     display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
-    padding: 40px;
+    max-width: 1150px;
+    padding: 20px;
     background-color: #f2f5fa;
+    margin-bottom: 80px;
     border-radius: 32px;
     border-color: #f2f5fa;
 }
@@ -288,27 +289,25 @@ header {
     align-items: flex-start;
     text-align: start;
     padding: 5px;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .novedades-texto h2 {
-
-    margin-top: -20px;
     font-size: 40px;
     padding-left: 5px;
     margin-left: 5px;
 }
 
-.novedades-texto p {
-    margin-bottom: -35px;
+.novedades-texto p {    
     padding-right: 40px;
 }
 
 .btn-suscribir {
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: start;
+    align-items: center;
+    padding-right: 40px ;
 }
 
 /* FOOTER */
@@ -328,6 +327,7 @@ footer {
     padding: 30px;
     margin-bottom: 15px;
 }
+
 .h3-footer {
     color: #202124;
     overflow: hidden;
@@ -346,10 +346,6 @@ footer {
     list-style: none;
 }
 
-.contenido-footer ul:first-child {
-    margin-top: 8px;
-}
-
 .contenido-footer a {
     color: #5f6368;
     font-weight: 500;
@@ -365,18 +361,16 @@ footer {
 .nav-footer2 {
     border-top: 1px solid #dadce0;
     padding: 30px 30px 0;
-}
-
-.nav-footer2 ul{
+    margin-bottom: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    justify-content: center;
+    gap: 45%;
+    }
 
-.nav-footer2 ul div {
+.nav-footer2__izquierda,
+.nav-footer2__derecha {
     display: flex;
-    flex-direction: row;
-    gap: 30px ;
+    gap: 40px;
 }
 
 .nav-footer2 a,
@@ -386,13 +380,7 @@ select{
     transition: all .3s ease;
 }
 
-.icono-help {
-    color: #5f6368;
-}
-
 select {
-    font-weight: 600;
-    padding: 10px;
     font-size: 15px;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -403,12 +391,12 @@ select {
     font-weight: 500;
 }
 
-.google-logo-footer img{
+.nav-footer2__izquierda img{
     margin-left: 30px;
     transition: all .3s ease;
-    margin-bottom: 20px;
 }
 
-.google-logo-footer img:hover {
+
+.nav-footer2__izquierda img:hover {
     background-color: rgba(180, 180, 180, 0.76);
 }

@@ -1,0 +1,407 @@
+:root {
+    --color-nav: rgba(0,0,0,0.8);
+    --color-font-grid: #1d1d1f;
+    --color-bg: #f5f5f7;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+} 
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    background-color: rgba(255, 255, 255, .8);
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.nav-bar ul {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4.4rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-bar a {
+    font-weight: 400;
+    color: var(--color-nav);
+}
+
+
+.dropdown-card {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%) translateY(-10px);
+    z-index: 50;
+    transition: opacity 0.35s ease-in, transform 0.35s ease-in, visibility 0s ease-in 0.35s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-card-container {
+    display: grid;
+    grid-template-columns: minmax(120px, 30rem) repeat(3,minmax(80px,20.5rem));
+    margin: 0 20rem 0 0;
+    padding: 4rem 2.5rem 10rem 2.5rem;
+    justify-content: center;
+}
+
+.container-dropdown {
+    padding-right: 8.8rem;
+}
+
+
+.p__dropdown {
+    font-size: 1.2rem;
+    color: #6e6e73;
+    font-weight: 400;
+    line-height: 1.3333733333;
+    margin-top: 2rem;
+    text-align: start;
+}
+
+.a__dropdown-sm  li a{
+    font-size: 1.2rem;
+    color: #333336;
+    font-weight: 600;
+    line-height: 1.3333733333;
+}
+
+.a__dropdown-sm li:hover {
+    color: #000000;
+}
+
+.container-dropdown ul,
+.container-dropdown-sm ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.container-dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.a__dropdown li a {
+    font-size: 2.4rem;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    color: #333336;
+}
+
+/* DROPDOWN */
+.li-dropdown:hover .dropdown-card {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+    transition: opacity 0.35s ease-in, transform 0.35s ease-in, visibility 0.2s ease-in;
+}
+
+
+
+
+
+
+
+/* MAIN */
+.products {
+    width: 100%;
+    height: 305vh;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(76rem, 3fr)) repeat(3, minmax(60rem, 1fr));
+    gap: 1.2rem;
+    grid-template-areas: "surprise surprise"
+                         "college college"
+                         "iphone iphone"
+                         "mini macbook"
+                         "ipadair ipadpro"
+                         "tradein card"
+                        ;
+}
+
+.surprise-shine {
+    grid-area: surprise;
+    background-image: url(https://www.apple.com/v/home/images/apple-event-september-2026/a/hero_apple_event_september_2026__fkq1w4m2h2eu_largetall.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem;
+
+    color: var(--color-bg);
+    border: 1px solid transparent;
+}
+
+.h2__grid {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.0714285714;
+    margin: 2rem .7rem .7rem 0;
+}
+
+.p__grid {
+    font-size: 2.8rem;
+    line-height: 1.1428571429;
+    font-weight: 400;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+.surprise-shine p {
+    margin-bottom: 1.5rem;
+}
+
+.surprise-shine .btn-add {
+    padding: 1.5rem 2.4rem;
+    margin-bottom: 3.5rem;
+}
+.btn-add {
+    color: black;
+    border: 1px solid rgba(255, 255, 255, .8);
+    background-color: rgb(245, 245, 247);
+    border-radius: 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.surprise-shine .btn-add:hover {
+    background-color: white;
+}
+
+.p__grid {
+    font-size: 2.8rem;
+    line-height: 1.1428571429;
+    font-weight: 400;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+.college-sorted {
+    grid-area: college;
+    background: var(--color-bg) url(https://www.apple.com/v/home/images/back-to-school-2026/a/hero_back_to_school_startframe__cd4vg5frm39e_largetall.png) center bottom  no-repeat;
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.college-sorted h2 {
+    padding-top: 3rem;
+    color: var(--color-font-grid);
+}
+.college-sorted p {
+    color: var(--color-font-grid);
+    width: 32%;
+    margin-bottom: 1.6rem;
+}
+
+.btn-blue {
+    color: var(--color-bg);
+    background-color: #0071e3;
+    font-size: 1.7rem;
+    padding: 1.3rem 2rem;
+    border-radius: 980px;
+}
+
+.btn-blue:hover {
+    background-color: #0076DF;
+}
+
+.college-sorted a {
+    margin-bottom: 1.5rem;
+}
+
+.iphone {
+    grid-area: iphone;
+    background: var(--color-bg) url(https://www.apple.com/v/home/images/iphone-family/a/hero_iphone_family__be5jkzxszb1e_largetall.jpg) center bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.iphone .h2__grid {
+    padding-top: 2rem;
+}
+.iphone .p__grid {
+    font-weight: 200;
+}
+.enlaces-iphone-grid {
+    margin-top: 2.5rem;
+}
+.enlaces-iphone-grid a {
+    margin-right: 2rem;
+}
+
+.enlaces-iphone-grid .btn-add,
+.enlaces-iphone-grid-sm .btn-add {
+    color: #0066cc;
+    border: 1px solid #0066cc;
+    padding: 1.3rem 2rem;
+}
+
+.enlaces-iphone-grid .btn-add:hover,
+.enlaces-iphone-grid-sm .btn-add:hover,
+.btn-buy-preorder:hover {
+    background-color: #0071e3;
+    color: #f5f5f7;
+}
+
+
+/* MINI GRILLAS */
+.enlaces-iphone-grid-sm .btn-add {
+    color: #0066cc;
+    border: 1px solid #0066cc;
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: .8rem 1.5rem;
+}
+
+.h3__grid {
+    font-size: 4rem;
+    padding-top: 2.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0em;
+    margin: 2rem .7rem 0 0;
+}
+
+.btn-buy-preorder {
+    color: #0066cc;
+    border: 1px solid #0066cc;
+    background-color: transparent;
+    border-radius: 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.p__grid-sm {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.1428571429;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.grid-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-sm:nth-child(odd) {
+    margin-right: 1.3rem;
+}
+
+.grid-sm:nth-child(even) {
+    margin-left: 1.3rem;
+}
+
+.mac-mini {
+    background-image: url(https://www.apple.com/v/home/images/mac-mini/a/promo_mac_mini_m6__pwypzbjgopea_large.jpg);
+    grid-area: mini;
+}
+
+.available-mac {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: .5rem;
+    color: #6e6e73;
+
+}
+.enlaces-iphone-grid-sm {
+    margin-top: 2.5rem;
+}
+.enlaces-iphone-grid-sm a {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem; 
+    margin-top: 2.5rem; 
+    margin-left: 1.2rem;
+}
+
+.mac-book {
+    background-image: url(https://www.apple.com/v/home/images/macbook-air-m5/a/promo_macbook_air_m5__e5xk2yysqiie_large.jpg);
+    grid-area: macbook;
+
+}
+
+.ipad-air {
+    grid-area: ipadair;
+    background-image: url(https://www.apple.com/v/home/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
+}
+
+.ipad-pro {
+    grid-area: ipadpro;
+    background-image: url(https://www.apple.com/v/home/images/ipad-pro/a/promo_ipad_pro__emtduc920o02_large.jpg);
+}
+
+.ipad-pro {
+    color: var(--color-bg);
+}
+
+.ipad-pro p {
+    max-width: 295px;
+}
+
+.trade-in {
+    grid-area: tradein;
+    background-image: url(https://www.apple.com/v/home/images/iphone-tradein/a/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg);
+}
+
+.trade-in img {
+    max-width: 180px;
+}
+
+.trade-in p {
+    max-width: 230px;
+}
+
+sup {
+    font-size: 1rem;
+}
+
+.card {
+    grid-area: card;
+    background-image: url(https://www.apple.com/v/home/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large_2x.jpg);
+}
+
+.card img {
+    max-width: 110px;
+}
+
+.card p {
+    max-width: 285px;
+}

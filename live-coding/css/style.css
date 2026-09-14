@@ -1,0 +1,200 @@
+:root {
+    --color-box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: #fafafa;
+}
+
+.contenedor {
+
+    max-width: 1140px;
+    
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    padding-top: 15px;
+
+}
+
+.contenedor-header ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: 15px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: gray;
+    font-weight: 700;
+
+}
+
+.marca p {
+    font-weight: 700;
+    margin: 0;
+}
+
+.marca ul {
+    display: flex;
+    padding: 20px;
+    gap: 35px;
+    margin: 0;
+    color: gray;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 35px;    
+}
+
+.hero p {
+    color: gray;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #0ea5a4;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.hero img {
+    border-radius: 15px;
+}
+
+/* COLECCION */
+.contenedor-etiquetas {
+    text-align: center;
+}
+
+.contenedor-etiquetas h2 {
+    margin: 30px 0;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carta img {
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carta {
+    flex: 1 1 calc(33,3% - 20px);
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: var(--color-box-shadow);
+}
+
+.carta p {
+    color: gray;
+}
+
+/* SOBRE ESTE PROYECTO */
+.sobre-este-proyecto {
+    box-shadow: var(--color-box-shadow);
+    margin: 20px 0;
+    padding: 25px;
+}
+
+/* GALERIA */
+#galeria {
+    box-shadow: var(--color-box-shadow);
+    padding: 10px 12px;
+}
+
+#galeria img {
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#galeria ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#galeria ul li {
+    flex: 0 0 calc(25% - 10px);
+}
+
+/* CONTACTO */
+.contacto {
+    box-shadow: var(--color-box-shadow);
+    padding: 10px 12px;
+    margin: 15px 0 35px 0;
+}
+
+.contacto span {
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(216, 214, 214);
+    margin-top: 15px;
+    padding: 20px 0;
+}
+
+footer div {
+    display: flex;
+    gap: 8px;
+}
+
+footer p {
+    color: gray;
+}
+
+.titulo-footer {
+    font-weight: 700;
+}
+
+.copy {
+    font-weight: 400;
+}
+
+footer ul {
+    display: flex;
+    gap: 25px;
+    color: gray;
+
+}

@@ -118,7 +118,7 @@ html {
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-50%) translateY(0);
-    transition: opacity 0.35s ease-in, transform 0.35s ease-in, visibility 0.2s ease-in;
+    transition: opacity 0.1s ease-in, transform 0.15s ease-in, visibility 0.2s ease-in;
 }
 
 
